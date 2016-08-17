@@ -21,3 +21,9 @@ block content
 						a(href='#') More coming soon!
 			div
 				a(href='/signout', class='btn btn-danger sign-out') Sign Out
+				
+			div.chartWrapper
+				div.chartAreaWrapper
+					canvas(id="hsmChart" height="300" width="5000" data-user='#{user.email}')
+				canvas(id="hsmChartAxis" height="300" width="0")			
+							
